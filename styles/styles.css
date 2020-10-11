@@ -1,0 +1,476 @@
+/*Universal Normalizers*/
+* { margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;  
+}
+
+/* Mobile First */
+/* Styles for body, buttons, h2, p and a */
+
+body {
+    width: 100%;
+    padding: 20px;
+} 
+
+button {
+    background-color: #00F3BB ;
+    width: 288px;
+    height: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    font-family: "IBM Plex Mono";
+    cursor: pointer;
+    opacity: 100%;
+    margin-bottom: 24px;
+
+   
+}
+
+button:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+h2 {
+   font-family: "IBM Plex Sans";
+   letter-spacing: 0;
+   line-height: 42px;  
+}
+
+p {
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 36px ;
+    opacity: 100%;
+    color: #060A24;
+    line-height: 24px;
+    margin-top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #060A24;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 45px;
+    top: 0;
+    padding: 10px 5%;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    color: #060A24;
+}
+
+.logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav .menu ul {
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    overflow: hidden;
+    list-style: none;
+    background: #0000EC 100%;
+    height: 0px;
+    transition:  0.5s ease;
+    
+}
+header nav .menu  ul li {
+    position: relative;   
+} 
+ 
+header nav .menu ul li a {
+    position: relative;
+    color: #fff;
+    padding: 16px 5%;                                                                     
+    line-height: 28px;
+    display: block;
+}
+
+header nav .menu  ul li:hover {
+    background: unset;
+    text-decoration: line-through;   
+} 
+
+header nav .menu  ul li a:hover {
+    color: #00F3BB;
+}
+
+header nav .menu input[type="checkbox"]:checked ~ ul {
+    height: 240px;
+    transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+}
+header nav .menu {
+    padding-top: 3px;
+}
+
+header nav .menu input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    opacity: 0;
+    z-index: 2;
+    position: absolute;
+}
+
+header nav .menu span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    margin-bottom: 6.5px;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.5s ease, opacity 0.55s ease;
+}
+header nav .menu span:first-child {
+    transform-origin: 0% 0%;
+}
+header nav .menu span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+header nav .menu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 1px);
+}
+header nav .menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+header nav .menu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+
+/* Introduction */
+#introduction {
+   display: flex;
+   justify-content: center;
+}
+
+.introduction-title {
+    font-family: "IBM Plex Sans";
+}
+
+.introduction-title .world {
+    text-decoration: line-through;
+}
+
+/*Chapters*/
+#chapters {
+   width: 24em;
+   height:73em ;
+   background-image:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+   transform: skew(0deg,-2deg);
+   background-position: center center;
+   margin:0px 500px 0px -20px; 
+   background-size: cover;
+}
+
+.chapters-content {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;    
+}
+
+iframe {
+    width: 16em;
+    height:232px; 
+    margin: 30px 0px 0px 30px;
+    transform: skew(0deg,2deg);
+}
+
+.chapters-title {
+    font-weight: lighter;
+    padding: 15px;
+    color: #fff;
+    transform: skew(0deg,2deg);
+}
+
+/* Presentation*/ 
+.phone-img  img{
+    position: relative;
+    margin: -20px 0px 0px -15px;
+    width: 20em; 
+}
+
+/*Guests*/
+#guests {
+    display: flex;
+    flex-flow: column;
+    margin-left: -20px;
+    line-height: 0px;
+}
+
+.guests-image {
+    width: 20em;
+}
+
+/*Topics*/
+#topics {
+    width: 100%;      
+}                             
+
+#topics h3 {
+    font-family: 'IBM Plex Sans', sans-serif;  
+}
+
+#topics h2 {
+    margin-top: 48px;
+}
+
+.topics-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+.topics-body {
+    padding: 36px;
+}
+
+/*Trends*/
+#trends {
+    display: flex;
+    width: 20em;
+    height:25em ;
+    margin-left: -20px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);  
+}
+
+#trends h2 {
+    color: #fff;
+    font-weight: lighter;
+    margin-top: 130px;
+}
+
+.trends-body {
+    margin-top: 20px;
+    text-align: center;
+} 
+
+.trends-button {
+    margin-top: 15px;
+}
+
+/*Footer*/
+#footer {
+    width: 100%;
+    font-family: "IBM Plex Mono";
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top:40px ;
+}
+
+.socialmedia-links {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    margin-top: 10px; 
+    cursor: pointer;  
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px){
+    header nav .menu ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        background: unset;
+        height: unset;
+    }
+    header nav .menu  ul li {
+        padding: 5px 10px;
+        display: inline-block;
+        text-decoration: none;
+    } 
+   
+    header nav .menu  ul li:hover {
+        background: unset;
+        text-decoration: line-through;    
+    } 
+    
+    header nav .menu ul li a {
+        text-decoration: none;
+        padding: unset;
+        line-height: unset;
+        color: #060A24;
+    }
+    header nav .menu  ul li a:hover {
+        color: #00F3BB;
+    } 
+
+    header nav .menu input {
+        display: none;
+    }
+    header nav .menu span {
+        display: none;
+    }
+
+    /*Para los h2*/
+    .subtitle {
+        margin-left: 200px;
+    }
+
+    /*introduction*/
+
+    #introduction {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .introduction-title {
+        display: flex;
+        justify-content: flex-start;
+        margin:146px 0px 0px 200px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    .second-line {
+        margin-left: 25px;
+    }
+
+    .dot {
+        color: #0000EC ;
+    }
+
+    .introduction-button {
+        width: 226px;
+        height: 56px;
+        margin: 56px 0px 100px 200px;
+    }
+
+    .introduction-text {
+        width: 628px;
+        height: 48px;
+        text-align: justify;
+        margin-left: 200px;
+    }
+
+    /*Chapters*/
+
+
+    #chapters {
+        width: 93.5em;
+        height: 50em;
+    }
+
+    .chapters-title {
+        float: left;
+        margin-left: 200px;
+        font-weight: bold;
+    }
+
+    .chapters-content {
+        flex-flow: row wrap;
+    }
+
+    iframe {
+        display: flex;
+        width: 30em;
+    
+    }
+    
+    .chapter-right {
+        margin-top: 45px;
+
+    }
+
+    /*Presentation*/
+    .presentation-content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-img {
+        display: flex;
+        margin: -40px 0px 80px 0px;
+       
+    }
+    
+    .presentation-text {
+        width: 464px;
+        height: 204px ;
+        margin-top: -50px;
+    }
+    
+    /*Guests*/
+    .guests-body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-right: -19px;  
+    }
+
+    .guests-image {
+        width: 100%;
+    }
+
+    /*Topics*/
+    .topics-details {
+        flex-direction:row;
+        justify-content: center;
+        margin:0;
+    }
+
+    /* Trends */
+     #trends {
+         display: flex;
+         justify-content: center;
+         width: 93.5em;
+     }
+
+     #trends h2 {
+        padding: 20px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        margin-bottom: 15px;   
+    }
+
+    /*Footer*/  
+    .footer-content {
+        width: 100%;
+        height: 95px;
+    }
+
+    footer h3 {
+        float: left;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .socialmedia-links {
+        float: right;  
+        font-size: 15px; 
+    }    
+    
+    .socialmedia-links i {
+        padding: 10px;
+    }
+}  
+
+
