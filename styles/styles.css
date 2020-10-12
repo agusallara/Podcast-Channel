@@ -110,9 +110,7 @@ header nav .menu  ul li a:hover {
 header nav .menu input[type="checkbox"]:checked ~ ul {
     height: 240px;
     transition: height 0.5s ease-in-out;
-    -moz-transition: height 0.5s ease-in-out;
-    -o-transition: height 0.5s ease-in-out;
-    -webkit-transition: height 0.5s ease-in-out;
+
 }
 header nav .menu {
     padding-top: 3px;
