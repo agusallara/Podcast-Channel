@@ -172,7 +172,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 /*Chapters*/
 #chapters {
-   width: 26em;
+   width: 23.3em;
    height:73em ;
    background-image:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
    transform: skew(0deg,-2deg);
@@ -219,7 +219,7 @@ iframe {
 
 
 .guests-image {
-    width: 26em;
+    width: 23.3em;
 }
 
 /*Topics*/
@@ -248,11 +248,13 @@ iframe {
 /*Trends*/
 #trends {
     display: flex;
-    width: 26em;
+    justify-content: center;
+    width: 23.2em;
     height:25em ;
     margin-left: -20px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);  
+    
 }
 
 #trends h2 {
