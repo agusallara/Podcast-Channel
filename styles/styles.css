@@ -368,8 +368,6 @@ iframe {
     }
 
     /*Chapters*/
-
-
     #chapters {
         width: 93.5em;
         height: 50em;
@@ -413,7 +411,7 @@ iframe {
     .presentation-text {
         width: 464px;
         height: 204px ;
-        margin-top: -50px;
+        margin-top: -150px;
     }
     
     /*Guests*/
