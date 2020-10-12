@@ -407,6 +407,10 @@ iframe {
         margin: -40px 0px 80px 0px;
        
     }
+
+    .we-title {
+        font-size: 48px;
+    }
     
     .presentation-text {
         width: 464px;
