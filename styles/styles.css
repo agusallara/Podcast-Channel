@@ -172,13 +172,12 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 
 /*Chapters*/
 #chapters {
-   width: 24em;
+   width: 22em;
    height:73em ;
    background-image:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
    transform: skew(0deg,-2deg);
-   background-position: center center;
    margin:0px 500px 0px -20px; 
-   background-size: cover;
+   
 }
 
 .chapters-content {
@@ -249,7 +248,7 @@ iframe {
 /*Trends*/
 #trends {
     display: flex;
-    width: 21.3em;
+    width: 23em;
     height:25em ;
     margin-left: -20px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
