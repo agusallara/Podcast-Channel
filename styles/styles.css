@@ -425,7 +425,7 @@ iframe {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin-right: -19px;  
+        margin-right: -40px;  
     }
 
     .guests-image {
