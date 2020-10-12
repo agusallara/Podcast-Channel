@@ -185,6 +185,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;    
+    margin-left: 25px;
 }
 
 iframe {
