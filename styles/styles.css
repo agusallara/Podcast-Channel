@@ -386,12 +386,10 @@ iframe {
     iframe {
         display: flex;
         width: 30em;
-    
     }
     
     .chapter-right {
         margin-top: 45px;
-
     }
 
     /*Presentation*/
@@ -404,8 +402,7 @@ iframe {
 
     .phone-img {
         display: flex;
-        margin: -40px 0px 80px 0px;
-       
+        margin: -40px 0px 80px 0px;  
     }
 
     .we-title {
