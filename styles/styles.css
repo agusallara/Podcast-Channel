@@ -190,7 +190,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 iframe {
     width: 301px;
     height:232px; 
-    margin-left:10px;
+    align-self: center;
     transform: skew(0deg,2deg);
 }
 
