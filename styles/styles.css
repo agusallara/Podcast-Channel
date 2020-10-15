@@ -173,7 +173,7 @@ header nav .menu input:checked ~ span:nth-last-child(2) {
 /*Chapters*/
 #chapters {
    width: 100vw;
-   height:68em ;
+   height:73em ;
    background-image:  linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
    transform: skew(0deg,-2deg);
    margin:0px 500px 0px -20px; 
@@ -192,6 +192,7 @@ iframe {
     height:232px; 
     align-self: center;
     transform: skew(0deg,2deg);
+    margin-top: 10px;
 }
 
 .chapters-title {
